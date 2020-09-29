@@ -10,8 +10,12 @@ Jakákoli připravená aplikace pro sage2 by měla obsahovat složku se dvěma s
   
 Podívejme se na obsah těchto souborů na příkladu ukázkové aplikace HelloFIT.
 
-.instructions.json
-[source,js]
+.app.rb
+[source,ruby]
 ----
+require 'sinatra'
 
+get '/hi' do
+  "Hello World!"
+end
 ----
