@@ -1,3 +1,3 @@
-= Sage2 
+= Příklady aplikací pro Sage2 
 
 == Aplikace HelloWorld a jak přidat je do SAGE2
