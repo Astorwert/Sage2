@@ -1,1 +1,2 @@
-# Sage2 - Aplikace HelloWorld a jak přidat je do SAGE2
+= Sage2 
+== Aplikace HelloWorld a jak přidat je do SAGE2
