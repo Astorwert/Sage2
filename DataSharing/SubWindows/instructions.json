@@ -1,0 +1,8 @@
+{
+  "main_script": "SubWindows.js",
+  "width": 100,
+  "height": 20,
+  "animation": true,
+  "title": "SubWindows",
+  "author": "Oleksandr Khokhych"
+}

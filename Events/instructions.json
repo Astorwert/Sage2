@@ -1,0 +1,8 @@
+{
+  "main_script": "Events.js",
+  "width": 800,
+  "height": 600,
+  "animation": true,
+  "title": "Events",
+  "author": "Oleksandr Khokhych"
+}

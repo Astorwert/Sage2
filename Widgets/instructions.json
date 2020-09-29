@@ -1,0 +1,8 @@
+{
+  "main_script": "Widgets.js",
+  "width": 500,
+  "height": 500,
+  "animation": true,
+  "title": "Widgets",
+  "author": "Oleksandr Khokhych"
+}

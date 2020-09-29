@@ -1,0 +1,8 @@
+{
+  "main_script": "Board.js",
+  "width": 300,
+  "height": 300,
+  "animation": true,
+  "title": "Board",
+  "author": "Oleksandr Khokhych"
+}
