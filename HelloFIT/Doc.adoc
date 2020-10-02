@@ -2,6 +2,8 @@
 
 == Aplikace HelloWorld a jak přidat je do SAGE2
 
+=== Tvorba aplikace
+
 Jakákoli připravená aplikace pro sage2 by měla obsahovat složku se dvěma soubory uvnitř:
 
   . Zdrojový soubor javascript (napr. HelloFIT.js)
