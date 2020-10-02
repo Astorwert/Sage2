@@ -1,8 +1,6 @@
 {
   "main_script": "helloFIT.js",
-  "width": 300,
-  "height": 200,
-  "resize": "proportional",
-  "title": "MyFirstProgram",
+  "width": 250,
+  "height": 250,
   "author": "Oleksandr Khokhych"
 }
