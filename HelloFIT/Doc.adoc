@@ -58,7 +58,7 @@ Existují dva způsoby, jak to lze udělat.
 
 === Přidání aplikace prostřednictvím uživatelského rozhraní
 
-    1. Vytvořime zip složku se dvěma soubory uvnitř 
+    * Vytvořime zip složku se dvěma soubory uvnitř 
     
 image::Images/zipfile.png[zip,200,100]
     
