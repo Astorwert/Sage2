@@ -13,6 +13,8 @@ K tomu použijeme funkci
 event: function (eventType, position, user_id, data, date);
 ----
 
+[source,js]
+----
 var Events = SAGE2_App.extend({
 
     init: function (data) {
@@ -121,3 +123,4 @@ var Events = SAGE2_App.extend({
         }
     }
 });
+----
