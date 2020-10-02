@@ -29,11 +29,14 @@ Podívejme se na obsah těchto souborů na příkladu triviální ukázkové apl
 // ukládá základní šablonu aplikace, kterou rozšíříme
 var helloFIT = SAGE2_App.extend({
     
-    // inicializační funkce volaná při vytvoření okna s parametrem 'data'
-    // který má základní informace o okně (x, y, width, height, a date)
+    // inicializační funkce volaná při vytvoření okna 
+    // vstupní parametr 'data' má základní informace o okně (x, y, width, height, a date)
     init: function (data) {
-
+        
+        // Inicializace aplikace 
+        // parametr 'div' je html-tagem kontejneru pro naši aplikaci (img, canvas)
         this.SAGE2Init("div", data);
+        // inicializace unikantního id kódu aplikace
         this.element.id = "div" + this.id;
 
         this.element.innerHTML = "<i style=\"font-size: 24px; color: Orange\">Hello FIT!</i>";
