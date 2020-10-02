@@ -4,9 +4,9 @@
 
 Jakákoli připravená aplikace pro sage2 by měla obsahovat složku se dvěma soubory uvnitř:
 
-  1. Zdrojový soubor javascript (napr. HelloFIT.js)
+  . Zdrojový soubor javascript (napr. HelloFIT.js)
   
-  2. Soubor JSON odpovídající zdrojovému kódu - instructions.json 
+  . Soubor JSON odpovídající zdrojovému kódu - instructions.json 
   
 Podívejme se na obsah těchto souborů na příkladu triviální ukázkové aplikace HelloFIT.
 
@@ -14,6 +14,7 @@ Podívejme se na obsah těchto souborů na příkladu triviální ukázkové apl
 [source,js]
 ----
 {
+  //
   "main_script": "helloFIT.js",
   "width": 250,
   "height": 250,
