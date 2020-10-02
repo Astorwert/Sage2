@@ -50,68 +50,77 @@ var Events = SAGE2_App.extend({
         this.ctx = this.element.getContext("2d");
 
         this.resizeEvents = "continuous";
-
+        
+        // počáteční souřadnice objektu
         this.Xpos = this.element.width / 2;
         this.Ypos = this.element.height / 2;
-
+        
+        //inicializace vlastností objektu: rychlost, velikost, barva, stav
         this.speed = 10;
         this.size = 40;
         this.color = "red";
         this.grab = false;
-
+        
+        // souřadnice objektu vzhledem ke kurzoru
         this.deltaX = 0;
         this.deltaY = 0;
     },
 
     draw: function (date) {
-
+        
+        // vyčistim obrazovku
         this.ctx.fillStyle = "white";
         this.ctx.fillRect(0, 0, this.element.width, this.element.height);
-
+        
+        // nakreslíme čtverec
         this.ctx.fillStyle = this.color;
         this.ctx.fillRect(this.Xpos, this.Ypos, this.size, this.size);
     },
-
+   
     resize: function (date) {
         this.refresh(date);
     },
 
     event: function (eventType, position, user_id, data, date) {
-
+        // pokud bylo stisknuto levé tlačítko myši
         if (eventType === "pointerPress" && (data.button === "left")) {
-
+            // pokud je pozice kurzoru uvnitř čtverce
             if (position.x >= this.Xpos && position.x <= this.Xpos + this.size &&
                 position.y >= this.Ypos && position.y <= this.Ypos + this.size) {
-
+                
+                // změnime stav a barvu objektu
                 this.grab = true;
                 this.color = "green";
-
+                
+                // vypočítáme pozice čtverce vzhledem k kurzoru myši
                 this.deltaX = position.x - this.Xpos;
                 this.deltaY = position.y - this.Ypos;
 
                 this.refresh(date);
             }
         }
-
+        // pokud se kurzor pohybuje
         else if (eventType === "pointerMove") {
-
+            // pokud je kurzor sevřen na objektu
             if (this.grab) {
-
+                // vypočítáme novou pozice čtverce
                 this.Xpos = position.x - this.deltaX;
                 this.Ypos = position.y - this.deltaY;
 
                 this.refresh(date);
             }
         }
-
+        // pokud uživatel uvolnil levé tlačítko myši
         else if (eventType === "pointerRelease" && (data.button === "left")) {
+            // pokud kurzor byl sevřen na objektu
             if (this.grab) {
+                // změnime stav a barvu objektu
                 this.grab = false;
                 this.color = "red";
                 this.refresh(date);
             }
         }
-
+        
         else if (eventType === "pointerScroll") {
             if (this.grab) {
                 this.size = this.size > data.wheelDelta * 0.2 ? this.size - data.wheelDelta * 0.2 : 5;
