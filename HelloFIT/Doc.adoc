@@ -60,19 +60,19 @@ Existují dva způsoby, jak to lze udělat.
 
     1. Vytvořime zip složku se dvěma soubory uvnitř 
     
-image::Images/zipfile.png[zip,200,300]
+image::Images/zipfile.png[zip,400,200]
     
     2. Přetáhneme ji do uživatelského rozhraní
     
-image::Images/move.png[move,200,300]
+image::Images/move.png[move,400,200]
     
     3. Potvrďte nahrání souboru
     
-image::Images/answer.png[answer,200,300]
+image::Images/answer.png[answer,400,200]
     
     4. Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
     
-image::Images/applist.png[app,200,300]
+image::Images/applist.png[app,400,200]
     
 Po přidání nové verze aplikace musíte restartovat server nebo měnit soubory přímo ve složce User/Documents/SAGE2Media/apps/
 
