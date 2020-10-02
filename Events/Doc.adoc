@@ -16,6 +16,14 @@ event: function (eventType, position, user_id, data, date);
 Bude vyvolána při jakékoli akci uživatele.
 
     * eventType - obsahuje typ události
+    
+    * position - obsahuje souřadnice (x, y) kurzoru 
+    
+    * user_id - obsahuje unikantni id uživatele
+    
+    * data - obsahuje zakladni informace ob aplikaci
+    
+    * date - obsahuje čas
 
 [source,js]
 ----
