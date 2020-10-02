@@ -25,8 +25,12 @@ Podívejme se na obsah těchto souborů na příkladu triviální ukázkové apl
 .HelloFIT.js
 [source,js]
 ----
+// hodnota proměnné musí být přesně stejná jako název skriptu!!!
+// ukládá základní šablonu aplikace, kterou rozšíříme
 var helloFIT = SAGE2_App.extend({
-
+    
+    // inicializační funkce volaná při vytvoření okna s parametrem 'data'
+    // který má základní informace o okně (x, y, width, height, a date)
     init: function (data) {
 
         this.SAGE2Init("div", data);
