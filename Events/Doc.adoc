@@ -24,7 +24,21 @@ Bude vyvolána při jakékoli akci uživatele.
     * data - obsahuje zakladni informace ob aplikaci
     
     * date - obsahuje čas
+    
+.instructions.json
+[source,js]
+====
+{
+  "main_script": "Events.js",
+  "width": 800,
+  "height": 600,
+  "animation": true,
+  "title": "Events",
+  "author": "Oleksandr Khokhych"
+}
+----
 
+.Events.js
 [source,js]
 ----
 var Events = SAGE2_App.extend({
