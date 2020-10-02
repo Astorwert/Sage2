@@ -46,3 +46,8 @@ var helloFIT = SAGE2_App.extend({
     },
 });
 ----
+
+== qq
+
+Nyní stačí přidat naši aplikaci do SAGE2 systemu.
+Existují dva způsoby, jak toho dosáhnout.
