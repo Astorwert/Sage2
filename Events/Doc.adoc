@@ -13,6 +13,10 @@ K tomu použijeme funkci
 event: function (eventType, position, user_id, data, date);
 ----
 
+Bude vyvolána při jakékoli akci uživatele.
+
+    * eventType - obsahuje typ události
+
 [source,js]
 ----
 var Events = SAGE2_App.extend({
