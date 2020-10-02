@@ -14,12 +14,11 @@ Podívejme se na obsah těchto souborů na příkladu triviální ukázkové apl
 [source,js]
 ----
 {
-  // přesný název skriptu
-  "main_script": "helloFIT.js",
-  "width": 250,
-  "height": 250,
-  "title": "HelloFIT",
-  "author": "Oleksandr Khokhych"
+  "main_script": "helloFIT.js",   // přesný název skriptu
+  "width": 250,                   // počáteční šířka okna
+  "height": 250,                  // počáteční výška okna
+  "title": "HelloFIT",            // název okna našeho programu
+  "author": "Oleksandr Khokhych"  // volitelný parametr
 }
 ----
 
