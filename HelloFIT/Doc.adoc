@@ -14,7 +14,7 @@ Podívejme se na obsah těchto souborů na příkladu triviální ukázkové apl
 [source,js]
 ----
 {
-  //
+  // přesný název skriptu
   "main_script": "helloFIT.js",
   "width": 250,
   "height": 250,
@@ -23,7 +23,7 @@ Podívejme se na obsah těchto souborů na příkladu triviální ukázkové apl
 }
 ----
 
-.HelloFIT.js::
+.HelloFIT.js
 [source,js]
 ----
 var helloFIT = SAGE2_App.extend({
