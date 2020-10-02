@@ -60,7 +60,7 @@ Existují dva způsoby, jak to lze udělat.
 
     . Vytvořime zip složku se dvěma soubory uvnitř
     
-    . Pak ji přetáhneme do uživatelského rozhraní
+    . Přetáhneme ji do uživatelského rozhraní
     
     . Potvrďte nahrání souboru
     
