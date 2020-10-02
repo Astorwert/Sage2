@@ -8,7 +8,9 @@ Jakákoli připravená aplikace pro sage2 by měla obsahovat složku se dvěma s
 
   . Zdrojový soubor javascript (napr. HelloFIT.js)
   
-  . Soubor JSON odpovídající zdrojovému kódu - instructions.json 
+  . Soubor JSON odpovídající zdrojovému kódu - instructions.json
+  
+Název složky nesmí obsahovat mezery!
   
 Podívejme se na obsah těchto souborů na příkladu triviální ukázkové aplikace HelloFIT.
 
@@ -56,4 +58,22 @@ Existují dva způsoby, jak to lze udělat.
 
 === Přidání aplikace prostřednictvím uživatelského rozhraní
 
+    . Vytvořime zip složku se dvěma soubory uvnitř
+    
+    . Přetáhneme ji do uživatelského rozhraní
+    
+    . Potvrďte nahrání souboru
+    
+    . Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
+    
+Po přidání nové verze aplikace musíte restartovat server nebo měnit soubory přímo ve složce User/Documents/SAGE2Media/apps/
+
 === Přidání aplikace přes server
+
+    . Otevřete instalační složku SAGE2
+    
+    . Přidejte složku aplikace do /public/uploads/apps/
+    
+    . Restartujte server
+    
+    . Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
