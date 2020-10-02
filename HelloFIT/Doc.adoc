@@ -60,7 +60,7 @@ Existují dva způsoby, jak to lze udělat.
 
     . Vytvořime zip složku se dvěma soubory uvnitř
     
-    image::Images/zipfile.png[zip,300,200]
+image::Images/zipfile.png[zip,300,200]
     
     . Přetáhneme ji do uživatelského rozhraní
     
