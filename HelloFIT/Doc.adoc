@@ -38,9 +38,10 @@ var helloFIT = SAGE2_App.extend({
         this.SAGE2Init("div", data);
         // inicializace unikantního id kódu aplikace
         this.element.id = "div" + this.id;
-
+        // přidame informace, kterou chceme vidět na obrazovce do innerHTML
+        // platí tady stejná syntaxe HTML
         this.element.innerHTML = "<i style=\"font-size: 24px; color: Orange\">Hello FIT!</i>";
-
+        // uděláme aby pozadí textu bylo bílé
         this.element.style.background = "white";
     },
 });
