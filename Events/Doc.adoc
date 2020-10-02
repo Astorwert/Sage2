@@ -27,7 +27,7 @@ Bude vyvolána při jakékoli akci uživatele.
     
 .instructions.json
 [source,js]
-====
+----
 {
   "main_script": "Events.js",
   "width": 800,
