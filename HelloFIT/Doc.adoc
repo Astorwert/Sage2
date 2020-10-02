@@ -86,6 +86,8 @@ Po přidání nové verze aplikace musíte restartovat server nebo měnit soubor
 
     * Otevřete instalační složku SAGE2
     
+image::Images/sagefolder.png[folder,500,300]
+    
     * Přidejte složku aplikace do /public/uploads/apps/
     
     * Restartujte server
