@@ -1,7 +1,7 @@
 {
-  "main_script": "helloFIT.js",   // přesný název skriptu
-  "width": 250,                   // počáteční šířka okna
-  "height": 250,                  // počáteční výška okna
-  "title": "HelloFIT",            // název okna našeho programu
-  "author": "Oleksandr Khokhych"  // volitelný parametr
+  "main_script": "helloFIT.js",
+  "width": 250,
+  "height": 250,
+  "title": "HelloFIT",
+  "author": "Oleksandr Khokhych"
 }
