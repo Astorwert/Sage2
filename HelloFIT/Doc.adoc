@@ -58,30 +58,36 @@ Existují dva způsoby, jak to lze udělat.
 
 === Přidání aplikace prostřednictvím uživatelského rozhraní
 
+    * Otevřete uživatelské rozhraní SAGE2
+    
+image::Images/ui.png[ui,500,300]
+
     * Vytvořime zip složku se dvěma soubory uvnitř 
     
 image::Images/zipfile.png[zip,200,100]
     
-    2. Přetáhneme ji do uživatelského rozhraní
+    * Přetáhneme ji do uživatelského rozhraní
     
 image::Images/move.png[move,500,300]
     
-    3. Potvrďte nahrání souboru
+    * Potvrďte nahrání souboru
     
 image::Images/answer.png[answer,500,300]
     
-    4. Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
+    * Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
     
-image::Images/applist.png[app,500,300]
+image::Images/app.png[app,500,300]
+    
+image::Images/applist.png[applist,500,300]
     
 Po přidání nové verze aplikace musíte restartovat server nebo měnit soubory přímo ve složce User/Documents/SAGE2Media/apps/
 
 === Přidání aplikace přes server
 
-    1. Otevřete instalační složku SAGE2
+    * Otevřete instalační složku SAGE2
     
-    2. Přidejte složku aplikace do /public/uploads/apps/
+    * Přidejte složku aplikace do /public/uploads/apps/
     
-    3. Restartujte server
+    * Restartujte server
     
-    4. Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
+    * Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
