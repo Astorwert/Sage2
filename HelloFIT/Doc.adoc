@@ -64,15 +64,15 @@ image::Images/zipfile.png[zip,200,100]
     
     2. Přetáhneme ji do uživatelského rozhraní
     
-image::Images/move.png[move,300,200]
+image::Images/move.png[move,500,300]
     
     3. Potvrďte nahrání souboru
     
-image::Images/answer.png[answer,300,200]
+image::Images/answer.png[answer,500,300]
     
     4. Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
     
-image::Images/applist.png[app,300,200]
+image::Images/applist.png[app,500,300]
     
 Po přidání nové verze aplikace musíte restartovat server nebo měnit soubory přímo ve složce User/Documents/SAGE2Media/apps/
 
