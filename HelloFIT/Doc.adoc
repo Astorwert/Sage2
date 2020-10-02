@@ -10,7 +10,7 @@ Jakákoli připravená aplikace pro sage2 by měla obsahovat složku se dvěma s
   
 Podívejme se na obsah těchto souborů na příkladu triviální ukázkové aplikace HelloFIT.
 
-.instructions.json::
+.instructions.json
 [source,js]
 ----
 {
