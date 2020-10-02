@@ -47,7 +47,11 @@ var helloFIT = SAGE2_App.extend({
 });
 ----
 
-== qq
+== Přidání a spuštění aplikace
 
 Nyní stačí přidat naši aplikaci do SAGE2 systemu.
-Existují dva způsoby, jak toho dosáhnout.
+Existují dva způsoby, jak to lze udělat.
+
+=== Přidání aplikace prostřednictvím uživatelského rozhraní
+
+=== Přidání aplikace přes server
