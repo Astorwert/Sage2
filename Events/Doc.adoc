@@ -6,6 +6,8 @@
 
 Tento příklad byl vytvořen, aby demonstroval, jak pracovat se systémem událostí.
 
+Mezi úkoly demo příkladu patří manipulace s tlačítky a kurzorem myši (tažení objektu), čtení stisknutí klávesnice
+
 K tomu použijeme funkci 
 
 [source,js]
