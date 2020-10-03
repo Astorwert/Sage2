@@ -128,7 +128,7 @@ var Events = SAGE2_App.extend({
             // pokud kurzor byl sevřen na objektu
             if (this.grab) {
                 // měníme velikost čtverce v závislosti na deltě otáčení
-                this.size = this.size > data.wheelDelta * 0.2 ? this.size - data.wheelDelta * 0.2 : 5;
+                this.size = this.size > 5 ? this.size - data.wheelDelta * 0.2 : 5;
                 
                 this.refresh(date);
             }
