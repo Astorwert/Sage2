@@ -146,22 +146,22 @@ var Events = SAGE2_App.extend({
         // pokud bylo stisknuto jedno z funkčních tlačítek 
         else if (eventType === "specialKey"){
             // šipka vlevo
-            if (data.code === 37 && data.state === "down") { //left
+            if (data.code === 37 && data.state === "down") {
                 this.Xpos -= this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
             // šipka nahoru
-            else if (data.code === 38 && data.state === "down") { //up
+            else if (data.code === 38 && data.state === "down") {
                 this.Ypos -= this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
             // šipka vpravo
-            else if (data.code === 39 && data.state === "down") { //right
+            else if (data.code === 39 && data.state === "down") {
                 this.Xpos += this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
             // šipka dolu
-            else if (data.code === 40 && data.state === "down") { //down
+            else if (data.code === 40 && data.state === "down") {
                 this.Ypos += this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
