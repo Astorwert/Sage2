@@ -127,8 +127,19 @@ var Events = SAGE2_App.extend({
         else if (eventType === "pointerScroll") {
             // pokud kurzor byl sevřen na objektu
             if (this.grab) {
+            
+                let kx = this.deltaX / this.size;
+                let ky = this.deltaY / this.size;
+                
                 // měníme velikost čtverce v závislosti na deltě otáčení
-                this.size = this.size > 5 ? this.size - data.wheelDelta * 0.2 : 5;
+                let newSize = this.size - data.wheelDelta * 0.2;
+                this.size = newSize > 10 ? newSize : 10;
+
+                this.deltaX = kx * this.size;
+                this.deltaY = ky * this.size;
+
+                this.Xpos = position.x - this.deltaX;
+                this.Ypos = position.y - this.deltaY;
                 
                 this.refresh(date);
             }
