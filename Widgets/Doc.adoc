@@ -6,9 +6,33 @@
 
 Tento příklad byl vytvořen, aby demonstroval, jak pracovat se systémem widgetu.
 
-Mezi úkoly demo příkladu patří manipulace s tlačítky a kurzorem myši (tažení objektu), čtení stisknutí klávesnice
+Cilem demonstrační aplikace je ukázat ovládání tlačítek, posuvníků a polí pro zadávání textu 
 
-K tomu použijeme funkci 
+pomocí příkladu konfigurovatelné hry Game of life.
+
+k vytváření widgetů použijeme následující funkce
+
+[source,js]
+----
+this.controls.addButton({ label: "", identifier: "", position: });
+----
+
+[source,js]
+----
+this.controls.addTextInput({ value: "", label: "",  identifier: "" });
+----
+
+[source,js]
+----
+this.controls.addSlider({
+    identifier: "",
+    minimum: ,
+    maximum: ,
+    label: "",
+    property: "",
+    increments: 
+});
+----
 
 .instructions.json
 [source,js]
