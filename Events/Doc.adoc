@@ -117,42 +117,52 @@ var Events = SAGE2_App.extend({
                 // změnime stav a barvu objektu
                 this.grab = false;
                 this.color = "red";
+                
                 this.refresh(date);
             }
         }
-        
+        // pokud používáme kolečko myši
         else if (eventType === "pointerScroll") {
+            // pokud kurzor byl sevřen na objektu
             if (this.grab) {
+                // měníme velikost čtverce v závislosti na deltě otáčení
                 this.size = this.size > data.wheelDelta * 0.2 ? this.size - data.wheelDelta * 0.2 : 5;
+                
                 this.refresh(date);
             }
         }
-
+        // téma widgetů bude probrána v jiném příkladu
         else if (eventType === "widgetEvent") {
             this.refresh(date);
         }
-        
-        else if (eventType === "keyboard"){
+        // pokud bylo stisknuto tlačítko na klávesnici
+        else if (eventType === "keyboard") {
+            // pokud je stisknuto tlačítko 'r'
             if (data.character === "r") {
                 this.size = 40;
                 this.refresh(date);
             }
         }
+        // pokud bylo stisknuto jedno z funkčních tlačítek 
         else if (eventType === "specialKey"){
-            if (data.code === 37 && data.state === "down") {//left
-                this.Xpos -= this.speed;
+            // šipka vlevo
+            if (data.code === 37 && data.state === "down") { //left
+                this.Xpos -= this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
-            else if (data.code === 38 && data.state === "down") {//up
-                this.Ypos -= this.speed;
+            // šipka nahoru
+            else if (data.code === 38 && data.state === "down") { //up
+                this.Ypos -= this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
-            else if (data.code === 39 && data.state === "down") {//right
-                this.Xpos += this.speed;
+            // šipka vpravo
+            else if (data.code === 39 && data.state === "down") { //right
+                this.Xpos += this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
-            else if (data.code === 40 && data.state === "down") {//down
-                this.Ypos += this.speed;
+            // šipka dolu
+            else if (data.code === 40 && data.state === "down") { //down
+                this.Ypos += this.speed; // změníme pozice objektu
                 this.refresh(date);
             }
         }
