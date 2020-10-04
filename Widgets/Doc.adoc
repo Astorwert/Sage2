@@ -157,7 +157,7 @@ var Widgets = SAGE2_App.extend({
         // potvrzení a dokončení přidávání widgetů
         this.controls.finishedAddingControls();
 
-        
+        // vytvoříme pole pro buňky
         this.board = new Array(50);
 
         for (var i = 0; i < 50; i++) {
@@ -166,19 +166,19 @@ var Widgets = SAGE2_App.extend({
                 this.board[i][j] = false;
             }
         }
-        
+        // souřadnice sousedů vzhledem k buňce
         //                 X  Y      X  Y      X  Y
         this.nighbors = [[-1, -1],  [0, -1],  [1, -1],
                          [-1, 0], /*[0, 0],*/ [1, 0],
                          [-1, 1],   [0, 1],   [1, 1]];
-
     },
 
     draw: function (date) {
-
+        // vymažeme obrazovku
         this.ctx.fillStyle = this.backcolor;
         this.ctx.fillRect(0, 0, this.element.width, this.element.height);
-
+        
+        // nakreslíme všechny živé buňky
         this.ctx.fillStyle = this.cellcolor;
         for (var y = 0; y < 50; y++) {
             for (var x = 0; x < 50; x++) {
@@ -187,7 +187,7 @@ var Widgets = SAGE2_App.extend({
                 }
             }
         }
-
+        // Pokud je aktivní automatický režim, voláme funkcí 'this.next()' každých 300 milisekund
         if (this.statement) setTimeout(this.next(), 300);
     },
 
@@ -196,6 +196,7 @@ var Widgets = SAGE2_App.extend({
     },
 
     next: function (date) {
+        // vytvoříme dočasné pole buněk
         var tempboard = new Array(50);
 
         for (var i = 0; i < 50; i++) {
@@ -204,10 +205,11 @@ var Widgets = SAGE2_App.extend({
                 tempboard[i][j] = false;
             }
         }
-
+        // pro každou buňku
         for (var i = 0; i < 50; i++) { //Y
             for (var j = 0; j < 50; j++) { //X
-
+                
+                // vypočítáme počet aktivních sousedních buněk
                 var count = 0;
 
                 for (let [a, b] of this.nighbors) {
@@ -215,13 +217,13 @@ var Widgets = SAGE2_App.extend({
                     let x = (j + a + 50) % 50;
                     if (this.board[y][x]) count++;
                 }
-
+                // pokud jsou dodržena všechna pravidla, buňka zůstane naživu
                 if ((this.board[i][j] && this.LALimit <= count && count <= this.UALimit) ||
                     (!this.board[i][j] && this.LBLimit <= count && count <= this.UBLimit))
                     tempboard[i][j] = true;
             }
         }
-
+        // zkopírujeme hodnotu dočasného pole
         this.board = tempboard.slice(0);
     },
 
