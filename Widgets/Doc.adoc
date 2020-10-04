@@ -228,38 +228,44 @@ var Widgets = SAGE2_App.extend({
     },
 
     event: function (eventType, position, user_id, data, date) {
-
+        // pokud je stisknuto levé tlačítko myši
         if (eventType === "pointerPress" && (data.button === "left")) {
-
+            // v závislosti na souřadnicích najdeme buňku
             var x = parseInt(position.x / this.size);
             var y = parseInt(position.y / this.size);
+            // změníme stav vybrané buňky na opačný
             this.board[y][x] = !this.board[y][x];
 
             this.refresh(date);
         }
-
+        // pokud událost přišla z widgetu
         else if (eventType === "widgetEvent") {
+            // v závislosti na widgetu
             switch (data.identifier) {
-
+                // pokud bylo stisknuto tlačítko "PlayButton"
                 case "PlayButton":
                     if (!this.statement) {
+                        // měníme herní režim na automatický
                         this.statement = true;
                         this.refresh(date);
                     }
                     break;
-
+                // pokud bylo stisknuto tlačítko "PauseButton"
                 case "PauseButton":
                     if (this.statement) {
+                        // měníme herní režim na manuální
                         this.statement = false;
                         this.refresh(date);
                     }
                     break;
-
+                // pokud bylo stisknuto tlačítko "PauseButton"
                 case "NextButton":
+                    // nakreslíme novou generaci buněk
                     if (!this.statement) this.next(date);
                     break;
-
+                // pokud bylo stisknuto tlačítko "ClearButton"
                 case "ClearButton":
+                    // vyčistíme pole
                     for (var i = 0; i < 50; i++) {
                         for (var j = 0; j < 50; j++) {
                             this.board[i][j] = false;
@@ -267,8 +273,9 @@ var Widgets = SAGE2_App.extend({
                     }
                     this.refresh(date);
                     break;
-
+                // pokud byla v textovém poli "SetColor" stisknuta klávesa 'Enter'
                 case "SetColor":
+                    // změníme barvu buněk na barvu zadanou do textového pole
                     this.cellcolor = data.text;
                     this.refresh(date);
                     break;
