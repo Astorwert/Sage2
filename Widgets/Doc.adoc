@@ -8,7 +8,7 @@ Tento příklad byl vytvořen, aby demonstroval, jak pracovat se systémem widge
 
 Cilem demonstrační aplikace je ukázat ovládání tlačítek, posuvníků a polí pro zadávání textu pomocí příkladu konfigurovatelné hry Game of life.
 
-==== Pro vytvoření tlačítka použijeme následující funkci:
+==== Pro vytvoření tlačítka použijeme:
 [source,js]
 ----
 this.controls.addButton({ label: "", identifier: "", position: });
@@ -20,7 +20,7 @@ this.controls.addButton({ label: "", identifier: "", position: });
 
 * position - pozice tlačítka v okně widgetu
 
-==== Pro vytvoření polí pro text použijeme následující funkci:
+==== Pro vytvoření polí pro text použijeme:
 [source,js]
 ----
 this.controls.addTextInput({ value: "", label: "",  identifier: "" });
@@ -32,7 +32,7 @@ this.controls.addTextInput({ value: "", label: "",  identifier: "" });
 
 * identifier - název pole
 
-==== Pro vytvoření posuvníků použijeme následující funkci:
+==== Pro vytvoření posuvníků použijeme:
 [source,js]
 ----
 this.controls.addSlider({
