@@ -10,17 +10,29 @@ Cilem demonstrační aplikace je ukázat ovládání tlačítek, posuvníků a p
 
 pomocí příkladu konfigurovatelné hry Game of life.
 
-k vytváření widgetů použijeme následující funkce
-
+Pro vytvoření tlačítka použijeme následující funkci
 [source,js]
 ----
 this.controls.addButton({ label: "", identifier: "", position: });
 ----
 
+* label - text, který se zobrazí na tlačítku
+
+* identifier - název tlačítka
+
+* position - pozice tlačítka v okně widgetu
+
+Pro vytvoření polí pro text použijeme následující funkci
 [source,js]
 ----
 this.controls.addTextInput({ value: "", label: "",  identifier: "" });
 ----
+
+* value - text, který pole bude obsahovat při prvním spuštění
+
+* label - text o maximální délce 5 znaků, který se zobrazí vlevo od vstupního pole
+
+* identifier - název pole
 
 [source,js]
 ----
