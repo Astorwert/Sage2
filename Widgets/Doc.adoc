@@ -10,7 +10,7 @@ Cilem demonstrační aplikace je ukázat ovládání tlačítek, posuvníků a p
 
 pomocí příkladu konfigurovatelné hry Game of life.
 
-Pro vytvoření tlačítka použijeme následující funkci
+==== Pro vytvoření tlačítka použijeme následující funkci:
 [source,js]
 ----
 this.controls.addButton({ label: "", identifier: "", position: });
@@ -22,7 +22,7 @@ this.controls.addButton({ label: "", identifier: "", position: });
 
 * position - pozice tlačítka v okně widgetu
 
-Pro vytvoření polí pro text použijeme následující funkci
+==== Pro vytvoření polí pro text použijeme následující funkci:
 [source,js]
 ----
 this.controls.addTextInput({ value: "", label: "",  identifier: "" });
@@ -34,6 +34,7 @@ this.controls.addTextInput({ value: "", label: "",  identifier: "" });
 
 * identifier - název pole
 
+==== Pro vytvoření posuvníků použijeme následující funkci:
 [source,js]
 ----
 this.controls.addSlider({
@@ -45,6 +46,20 @@ this.controls.addSlider({
     increments: 
 });
 ----
+
+* identifier - název posuvníku
+
+* minimum - minimální povolená hodnota pro posuvník
+
+* maximum - maximální povolená hodnota pro posuvník
+
+* label - text o maximální délce 5 znaků, který se zobrazí posuvníka
+
+* property - obsahuje celé jméno proměnné, která má být změněna ve formátu řetězce
+
+* increments - přírůstková jednotka
+
+==== Podíváme se na příklad aplikace pracující s widgety
 
 .instructions.json
 [source,js]
