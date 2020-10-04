@@ -284,3 +284,13 @@ var Widgets = SAGE2_App.extend({
     }
 });
 ----
+
+image::Images/1png[img1,500,300]
+
+image::Images/2png[img2,500,300]
+
+image::Images/3png[img2,500,300]
+
+image::Images/4png[img3,500,300]
+
+image::Images/5png[img4,500,300]
