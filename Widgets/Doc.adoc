@@ -59,6 +59,18 @@ this.controls.addSlider({
 
 * increments - přírůstková jednotka
 
+==== Budeme řídit akce widgetů uvnitř bloku, kde 'data.identifier' obsahuje název widgetu
+
+[source,js]
+----
+ event: function (eventType, position, user_id, data, date) {
+       if (eventType === "widgetEvent") {
+            switch (data.identifier) {
+            }
+       }
+ }
+----
+
 ==== Podíváme se na příklad aplikace pracující s widgety
 
 .instructions.json
