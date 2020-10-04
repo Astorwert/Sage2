@@ -51,9 +51,9 @@ this.controls.addSlider({
 
 * maximum - maximální povolená hodnota pro posuvník
 
-* label - text o maximální délce 5 znaků, který se zobrazí posuvníka
+* label - text o maximální délce 5 znaků, který se zobrazí zleva od posuvníka
 
-* property - obsahuje celé jméno proměnné, která má být změněna ve formátu řetězce
+* property - obsahuje (celé!) jméno proměnné, která má být změněna. (ve formátu řetězce!)
 
 * increments - přírůstková jednotka
 
@@ -107,51 +107,54 @@ var Widgets = SAGE2_App.extend({
         this.UALimit = 3;           // horní hranice pro život starých buněk
         this.LALimit = 2;           // dolní hranice pro život starých buněk
         
-        // vytvoření nového tlačítka s textem "Play" a identifikáčním názvem "PlayButton" na pozici 1
+        // vytvoření tlačítka s textem "Play" a identifikáčním názvem "PlayButton" na pozici 1
         this.controls.addButton({ label: "Play", identifier: "PlayButton", position: 1 });
-        // vytvoření nového tlačítka s obrazkem typu "play-pause" a identifikáčním názvem "PauseButton" na pozici 2
+        // vytvoření tlačítka s obrazkem typu "play-pause" a identifikáčním názvem "PauseButton" na pozici 2
         this.controls.addButton({ type: "play-pause", identifier: "PauseButton", position: 2 });
-        // vytvoření nového tlačítka s obrazkem typu "next" a identifikáčním názvem "NextButton" na pozici 6
+        // vytvoření tlačítka s obrazkem typu "next" a identifikáčním názvem "NextButton" na pozici 6
         this.controls.addButton({ type: "next", identifier: "NextButton", position: 6 });
-        // vytvoření nového tlačítka s textem "Clear" a identifikáčním názvem "ClearButton" na pozici 7
+        // vytvoření tlačítka s textem "Clear" a identifikáčním názvem "ClearButton" na pozici 7
         this.controls.addButton({ label: "Clear", identifier: "ClearButton", position: 7 });
-
+        
+        // vytvoření pole s textem "lime", předponou "Color" a identifikáčním názvem "SetColor"
         this.controls.addTextInput({ value: "lime", label: "Color",  identifier: "SetColor" });
 
+        // vytvoření posuvníku 
         this.controls.addSlider({
-            identifier: "LBLiveSlider",
-            minimum: 0,
-            maximum: 8,
-            label: "LB",
-            property: "this.LBLimit",
-            increments: 1
+            identifier: "LBLiveSlider", // identifikáční název
+            minimum: 0,                 // minimální hodnota
+            maximum: 8,                 // maximální hodnota
+            label: "LB",                // předpona
+            property: "this.LBLimit",   // proměnna
+            increments: 1               
         });
         this.controls.addSlider({
-            identifier: "UBLiveSlider",
-            minimum: 0,
-            maximum: 8,
-            label: "UB",
-            property: "this.UBLimit",
-            increments: 1
-        });
-
-        this.controls.addSlider({
-            identifier: "LALiveSlider",
-            minimum: 0,
-            maximum: 8, 
-            label: "LA",
-            property: "this.LALimit",
-            increments: 1
-        });
-        this.controls.addSlider({
-            identifier: "UALiveSlider",
-            minimum: 0,
-            maximum: 8,
-            label: "UA",
-            property: "this.UALimit",
+            identifier: "UBLiveSlider", // identifikáční název
+            minimum: 0,                 // minimální hodnota
+            maximum: 8,                 // maximální hodnota
+            label: "UB",                // předpona
+            property: "this.UBLimit",   // proměnna
             increments: 1
         });
 
+        this.controls.addSlider({
+            identifier: "LALiveSlider", // identifikáční název
+            minimum: 0,                 // minimální hodnota
+            maximum: 8,                 // maximální hodnota
+            label: "LA",                // předpona
+            property: "this.LALimit",   // proměnna
+            increments: 1
+        });
+        this.controls.addSlider({
+            identifier: "UALiveSlider", // identifikáční název
+            minimum: 0,                 // minimální hodnota
+            maximum: 8,                 // maximální hodnota
+            label: "UA",                // předpona
+            property: "this.UALimit",   // proměnna
+            increments: 1
+        });
+
+        // potvrzení a dokončení přidávání widgetů
         this.controls.finishedAddingControls();
 
         
