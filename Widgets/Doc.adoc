@@ -6,9 +6,7 @@
 
 Tento příklad byl vytvořen, aby demonstroval, jak pracovat se systémem widgetu.
 
-Cilem demonstrační aplikace je ukázat ovládání tlačítek, posuvníků a polí pro zadávání textu 
-
-pomocí příkladu konfigurovatelné hry Game of life.
+Cilem demonstrační aplikace je ukázat ovládání tlačítek, posuvníků a polí pro zadávání textu pomocí příkladu konfigurovatelné hry Game of life.
 
 ==== Pro vytvoření tlačítka použijeme následující funkci:
 [source,js]
