@@ -1,1 +1,28 @@
-# Sage2
+= Příklady aplikací pro Sage2 
+
+== Rodičovské a odvozené aplikace
+
+=== Tvorba aplikace
+
+
+
+[source,js]
+----
+
+----
+
+.instructions.json
+[source,js]
+----
+
+----
+
+.Board.js
+[source,js]
+----
+
+----
+
+
+
+image::Images/app.png[app,500,300]
