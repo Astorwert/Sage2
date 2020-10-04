@@ -96,20 +96,24 @@ var Widgets = SAGE2_App.extend({
 
         this.resizeEvents = "continuous";
 
-        this.size = 10;
-        this.backcolor = "black";
-        this.cellcolor = "lime";
-        this.statement = false;
+        this.size = 10;             // velikost jedné buňky
+        this.backcolor = "black";   // barva pozadí
+        this.cellcolor = "lime";    // barva buňky
+        this.statement = false;     // stav herního režimu
 
-        this.UBLimit = 3;
-        this.LBLimit = 3;
+        this.UBLimit = 3;           // horní hranice pro vytvoření nové buňky
+        this.LBLimit = 3;           // dolní hranice pro vytvoření nové buňky
 
-        this.UALimit = 3;
-        this.LALimit = 2;
-
+        this.UALimit = 3;           // horní hranice pro život starých buněk
+        this.LALimit = 2;           // dolní hranice pro život starých buněk
+        
+        // vytvoření nového tlačítka s textem "Play" a identifikáčním názvem "PlayButton" na pozici 1
         this.controls.addButton({ label: "Play", identifier: "PlayButton", position: 1 });
+        // vytvoření nového tlačítka s obrazkem typu "play-pause" a identifikáčním názvem "PauseButton" na pozici 2
         this.controls.addButton({ type: "play-pause", identifier: "PauseButton", position: 2 });
+        // vytvoření nového tlačítka s obrazkem typu "next" a identifikáčním názvem "NextButton" na pozici 6
         this.controls.addButton({ type: "next", identifier: "NextButton", position: 6 });
+        // vytvoření nového tlačítka s textem "Clear" a identifikáčním názvem "ClearButton" na pozici 7
         this.controls.addButton({ label: "Clear", identifier: "ClearButton", position: 7 });
 
         this.controls.addTextInput({ value: "lime", label: "Color",  identifier: "SetColor" });
