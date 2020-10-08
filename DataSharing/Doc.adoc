@@ -57,8 +57,7 @@ sendDataToParentApp(nameOfFunction, data)
   * nameOfFunction - nazev funkce ve formátu řetězce
   
   * data - hodnota předaná funkci
-
-/// Rodičovská aplikace
+=== Rodičovská aplikace
 .instructions.json
 [source,js]
 ----
@@ -156,7 +155,7 @@ var Game = SAGE2_App.extend({
 });
 ----
 
-/// Odvozená aplikace
+=== Odvozená aplikace
 .instructions.json
 [source,js]
 ----
