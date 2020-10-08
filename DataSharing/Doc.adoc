@@ -57,6 +57,7 @@ sendDataToParentApp(nameOfFunction, data)
   * nameOfFunction - nazev funkce ve formátu řetězce
   
   * data - hodnota předaná funkci
+  
 === Rodičovská aplikace
 .instructions.json
 [source,js]
