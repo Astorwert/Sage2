@@ -202,46 +202,50 @@ var Board = SAGE2_App.extend({
 
         //...
 
+        // aktuální stav herního pole
         this.statement = "waiting";
     },
-
+    
+    // vymaže obrazovku
     clean: function () {
-        this.ctx.fillStyle = this.backcolor;
-        this.ctx.fillRect(0, 0, this.element.width, this.element.height);
+        //...
     },
-
+    
     drawLine: function (x0, y0, x1, y1) {
         //...
     },
 
+    // označíme herní mřížku
     drawgrid: function () {
         //...
     },
-
+    
+    // kreslení pole pro umístění lodí
     drawpreset: function () {
         //...
     },
 
+    // kreslení pole pro střelbu
     drawmap: function () {
         //...
-        this.drawgrid();
     },
 
     draw: function (date) {
 
         this.clean();
 
+        // v závislosti na aktuálním stavu
         switch (this.statement) {
-
+            //pokud tah jiného hráče, na vlastní obrazovku nic nekreslíme    
             case "waiting":
-                this.ctx.fillStyle = "black";
-                this.ctx.fillRect(0, 0, this.element.width, this.element.height);
                 break;
-
+                
+            // jestli je řada na nás umístit lodě
             case "preparation":
                 this.drawpreset();
                 break;
-
+            
+            // jestli je řada na nás střílet
             case "turn":
                 this.drawmap();
                 break;
@@ -256,6 +260,7 @@ var Board = SAGE2_App.extend({
         this.statement = val;
     },
 
+    // funkce, která vezme svůj index a přihlásí se k aktualizaci odpovídající proměnné na serveru
     setNum: function (num) {
         if (num.val === 1) this.serverDataSubscribeToValue("FirstPlayerState", this.setState);
         if (num.val === 2) this.serverDataSubscribeToValue("SecondPlayerState", this.setState);
@@ -264,34 +269,45 @@ var Board = SAGE2_App.extend({
     contain: function (tmp, [y, x]) {
         //...
     },
-
+    
+    // funkce k určení, zda byla loď zcela zničena
     bfsfill: function (ty, tx) {
         //...
     },
 
     event: function (eventType, position, user_id, data, date) {
-
+    
+        // pokud bylo stisknuto levé tlačítko myši
         if (eventType === "pointerPress" && (data.button === "left")) {
 
             var x = parseInt(position.x / this.size);
             var y = parseInt(position.y / this.size);
-
+            
+            // pokud je fáze umístění lodi, změníme hodnotu buňky na opačnou
             if (this.statement === "preparation") this.presetboard[y][x] = !this.presetboard[y][x];
+            // pokud je fáze palby na lodě
             if (this.statement === "turn") {
+                // pokud je v této buňce nepřátelská loď
                 if (this.presetboard[y][x]) {
+                    // označíme buňku
                     this.gameboard[y][x] = 2;
+                    // zkontrolujeme, zda byla loď úplně zničena
                     this.bfsfill(y, x);
                 }
+                // pokud není
                 else {
+                    // označíme buňku
                     this.gameboard[y][x] = 1;
+                    // změníme stav nadřazené aplikace, čímž předáme tah dalšímu hráči
                     this.sendDataToParentApp("nextstate", date);
                 }
             }
         }
-
+        
         else if (eventType === "keyboard") {
 
             if (data.character === "r") {
+                // změníme stav nadřazené aplikace, čímž předáme tah dalšímu hráči
                 this.sendDataToParentApp("nextstate", date);
             }
         }
