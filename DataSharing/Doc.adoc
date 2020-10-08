@@ -6,25 +6,58 @@
 
 Podíváme se na Rodičovské a odvozené aplikace a jejich interakce na příkladu hry "Námořní bitva"
 
+Pro interakci použijeme následující funkce:
+
+==== Pošleme požadavek na server za účelem spuštění odvozené aplikace
 [source,js]
 ----
 launchAppWithValues: function(appName, paramObj, x, y, funcToPassParams)
 ----
 
+  * appName - název programu, který se má spustit ze seznamu aplikací
+  
+  * paramObj - volitelný parametr, který bude předán jako argument funkci 'funcToPassParams'. Musí to být typ Object!
+  
+  * x, y - souřadnice, kde bude aplikace spuštěna
+  
+  * funcToPassParams - název funkce, která bude volána po inicializaci aplikace ve formátu řetězce
+
+==== Funkce pro inicializaci proměnné na serveru
 [source,js]
 ----
 serverDataSetValue: function(nameOfValue, value, description, shouldRemoveValueFromServerWhenAppCloses = false)
 ----
 
+  * nameOfValue - název proměnné. Pokud proměnná již existuje, přiřadí jí novou hodnotu
+  
+  * value - hodnota, která má být přiřazena proměnné. 
+  
+  * description - popis proměnné
+  
+  * shouldRemoveValueFromServerWhenAppCloses - měla by být proměnná odstraněna ze serveru po ukončení aplikace
+
+
+==== Pro kontrolu změny hodnoty proměnne na serveru
 [source,js]
 ----
 serverDataSubscribeToValue: function(nameOfValue, callback, unsubscribe = false)
 ----
 
+  * nameOfValue - název proměnné
+  
+  * callback - funkce, která bude volána, když se proměnná změní a vezme její novou hodnotu jako argument
+  
+  * unsubscribe - zapnout nebo vypnout sledování
+  
+==== Зokud potřebujeme přímo zavolat funkci z rodičovské aplikace
 [source,js]
 ----
-this.sendDataToParentApp("nameOfFunction", data)
+sendDataToParentApp(nameOfFunction, data)
 ----
+
+  * nameOfFunction - nazev funkce ve formátu řetězce
+  
+  * data - hodnota předaná funkci
 
 .instructions.json
 [source,js]
