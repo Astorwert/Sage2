@@ -51,7 +51,7 @@ serverDataSubscribeToValue: function(nameOfValue, callback, unsubscribe = false)
 ==== Pokud potřebujeme přímo zavolat funkci z rodičovské aplikace
 [source,js]
 ----
-sendDataToParentApp(nameOfFunction, data)
+sendDataToParentApp: function(nameOfFunction, data)
 ----
 
   * nameOfFunction - nazev funkce ve formátu řetězce
