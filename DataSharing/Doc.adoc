@@ -256,6 +256,7 @@ var Board = SAGE2_App.extend({
         this.refresh(date);
     },
 
+    // funkce zpětného volání ke změně stavu
     setState: function (val) {
         this.statement = val;
     },
