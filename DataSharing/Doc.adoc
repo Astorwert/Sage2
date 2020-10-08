@@ -36,7 +36,6 @@ serverDataSetValue: function(nameOfValue, value, description, shouldRemoveValueF
   
   * shouldRemoveValueFromServerWhenAppCloses - měla by být proměnná odstraněna ze serveru po ukončení aplikace
 
-
 ==== Pro kontrolu změny hodnoty proměnne na serveru
 [source,js]
 ----
@@ -49,7 +48,7 @@ serverDataSubscribeToValue: function(nameOfValue, callback, unsubscribe = false)
   
   * unsubscribe - zapnout nebo vypnout sledování
   
-==== Зokud potřebujeme přímo zavolat funkci z rodičovské aplikace
+==== Pokud potřebujeme přímo zavolat funkci z rodičovské aplikace
 [source,js]
 ----
 sendDataToParentApp(nameOfFunction, data)
@@ -59,6 +58,7 @@ sendDataToParentApp(nameOfFunction, data)
   
   * data - hodnota předaná funkci
 
+/// Rodičovská aplikace
 .instructions.json
 [source,js]
 ----
@@ -156,6 +156,7 @@ var Game = SAGE2_App.extend({
 });
 ----
 
+/// Odvozená aplikace
 .instructions.json
 [source,js]
 ----
