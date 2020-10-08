@@ -99,6 +99,7 @@ var Game = SAGE2_App.extend({
         this.ctx.strokeStyle = "grey";
         this.ctx.font = "16px serif";
 
+        // aktuální stav hry
         this.statement = 0;
     },
 
@@ -114,7 +115,9 @@ var Game = SAGE2_App.extend({
         this.update(date);
     },
 
+    // funkce volaná z nadřazené aplikace
     nextstate: function (date) {
+        // měníme aktuální stav hry
         this.statement = (this.statement === 4 ? 3 : this.statement + 1);
         this.refresh(date);
     },
@@ -122,7 +125,8 @@ var Game = SAGE2_App.extend({
     update: function (date) {
 
         this.ctx.fillStyle = "red";
-
+        
+        // v závislosti na aktuálním stavu hry
         switch (this.statement) {
 
             case 0:
@@ -134,25 +138,33 @@ var Game = SAGE2_App.extend({
                 break;
 
             case 1:
+                // přiřazení proměnné "FirstPlayerState" hodnotu "waiting"
                 this.serverDataSetValue("FirstPlayerState", "waiting", "First player statement variable", true);
+                // přiřazení proměnné "SecondPlayerState" hodnotu "preparation"
                 this.serverDataSetValue("SecondPlayerState", "preparation", "Second player statement variable", true);
                 this.ctx.fillText("Preparing Second Player", 20, 20);
                 break;
 
             case 2: 
+                // přiřazení proměnné "FirstPlayerState" hodnotu "preparation"
                 this.serverDataSetValue("FirstPlayerState", "preparation", "First player statement variable", true);
+                // přiřazení proměnné "SecondPlayerState" hodnotu "waiting"
                 this.serverDataSetValue("SecondPlayerState", "waiting", "Second player statement variable", true);
                 this.ctx.fillText("Preparing First Player", 20, 20);
                 break;
 
             case 3:
+                // přiřazení proměnné "FirstPlayerState" hodnotu "waiting"
                 this.serverDataSetValue("FirstPlayerState", "waiting", "First player statement variable", true);
+                // přiřazení proměnné "SecondPlayerState" hodnotu "turn"
                 this.serverDataSetValue("SecondPlayerState", "turn", "Second player statement variable", true);
                 this.ctx.fillText("First Player Turn", 20, 20);
                 break;
 
             case 4:
+                // přiřazení proměnné "FirstPlayerState" hodnotu "turn"
                 this.serverDataSetValue("FirstPlayerState", "turn", "First player statement variable", true);
+                // přiřazení proměnné "SecondPlayerState" hodnotu "waiting"
                 this.serverDataSetValue("SecondPlayerState", "waiting", "Second player statement variable", true);
                 this.ctx.fillText("Second Player Turn", 20, 20);
                 break;
