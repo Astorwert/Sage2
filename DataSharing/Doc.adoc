@@ -307,42 +307,7 @@ var Board = SAGE2_App.extend({
     },
 
     bfsfill: function (ty, tx) {
-        let queue = [[ty, tx]];
-        let tmp = new Set();
-
-        while (queue.length != 0) {
-            let [y, x] = queue.shift();
-
-            if (this.contain(tmp, [y, x])) {
-                tmp.add([y, x]);
-
-                for (let [a, b] of this.nighbors) {
-                    a += x;
-                    b += y;
-
-                    if (b >= 0 && b <= 9 && a >= 0 && a <= 9) {
-
-                        if (this.presetboard[b][a]) {
-                            queue.push([b, a]);
-                            if (this.gameboard[b][a] == 0) return;
-                        }
-                    }
-                }
-            }
-        }
-
-        for (let [y, x] of tmp) {
-            for (let [a, b] of this.nighbors) {
-                a += x;
-                b += y;
-
-                if (b >= 0 && b <= 9 && a >= 0 && a <= 9) {
-                    if (!this.presetboard[b][a]) {
-                        this.gameboard[b][a] = 1;
-                    }
-                }
-            }
-        }
+        //...
     },
 
     event: function (eventType, position, user_id, data, date) {
