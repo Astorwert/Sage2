@@ -4,11 +4,26 @@
 
 === Tvorba aplikace
 
-
+Podíváme se na Rodičovské a odvozené aplikace a jejich interakce na příkladu hry "Námořní bitva"
 
 [source,js]
 ----
+launchAppWithValues: function(appName, paramObj, x, y, funcToPassParams)
+----
 
+[source,js]
+----
+serverDataSetValue: function(nameOfValue, value, description, shouldRemoveValueFromServerWhenAppCloses = false)
+----
+
+[source,js]
+----
+serverDataSubscribeToValue: function(nameOfValue, callback, unsubscribe = false)
+----
+
+[source,js]
+----
+this.sendDataToParentApp("nameOfFunction", data)
 ----
 
 .instructions.json
