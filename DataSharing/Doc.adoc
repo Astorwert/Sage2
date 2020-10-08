@@ -83,12 +83,16 @@ var Game = SAGE2_App.extend({
         this.ctx = this.element.getContext("2d");
         this.resizeEvents = "continuous";
 
+        // inicializace proměnných pro předání podřízeným aplikacím
         var num1 = new Object();
         var num2 = new Object();
+        // přiřazení indexů
         num1.val = 1; 
         num2.val = 2;
-
+        
+        // spuštění první aplikace
         this.launchAppWithValues("Board", num1, this.sage2_x, this.sage2_y + 40, "setNum");
+        // spuštění druhé aplikace
         this.launchAppWithValues("Board", num2, this.sage2_x + 300, this.sage2_y + 40, "setNum");
 
         this.ctx.lineWidth = 2;
@@ -122,7 +126,9 @@ var Game = SAGE2_App.extend({
         switch (this.statement) {
 
             case 0:
+                // přiřazení proměnné "FirstPlayerState" hodnotu "waiting"
                 this.serverDataSetValue("FirstPlayerState", "waiting", "First player statement variable", true);
+                // přiřazení proměnné "SecondPlayerState" hodnotu "waiting"
                 this.serverDataSetValue("SecondPlayerState", "waiting", "Second player statement variable", true);
                 this.ctx.fillText("Press R to start the game", 20, 20);
                 break;
