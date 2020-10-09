@@ -316,6 +316,6 @@ var Board = SAGE2_App.extend({
 });
 ----
 
-image::Images/img1.png[img1,500,300]
+image::Images/img1.png[]
 
-image::Images/img2.png[img2,500,300]
+image::Images/img2.png[]
