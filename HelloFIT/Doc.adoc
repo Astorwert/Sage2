@@ -60,25 +60,25 @@ Existují dva způsoby, jak to lze udělat.
 
     * Otevřete uživatelské rozhraní SAGE2
     
-image::Images/ui.png[ui,500,300]
+image::Images/ui.png[]
 
     * Vytvořime zip složku se dvěma soubory uvnitř 
     
-image::Images/zipfile.png[zip,200,100]
+image::Images/zipfile.png[]
     
     * Přetáhneme ji do uživatelského rozhraní
     
-image::Images/move.png[move,500,300]
+image::Images/move.png[]
     
     * Potvrďte nahrání souboru
     
-image::Images/answer.png[answer,500,300]
+image::Images/answer.png[]
     
     * Aplikace se spustí a v budoucnu bude k dispozici v seznamu všech aplikací
     
-image::Images/app.png[app,500,300]
+image::Images/app.png[]
     
-image::Images/applist.png[applist,500,300]
+image::Images/applist.png[]
     
 Po přidání nové verze aplikace musíte restartovat server nebo měnit soubory přímo ve složce User/Documents/SAGE2Media/apps/
 
