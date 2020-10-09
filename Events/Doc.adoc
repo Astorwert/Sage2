@@ -183,4 +183,4 @@ var Events = SAGE2_App.extend({
 });
 ----
 
-image::Images/app.png[app,500,300]
+image::Images/app.png[]
