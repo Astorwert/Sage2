@@ -64,8 +64,10 @@ image::Images/11.png[]
 
 Pokud se vrátíme na stránku SAGE a stiskneme start, spusti se Electron a zobrazí nám `SAGE2: Display` klient.
 
-V levém horním rohu vidíme adresu, na které můžeme otevřít uživatelské rozhraní.
+V levém horním rohu vidíme adresu (výchozí hodnota je localhost:9292), na které můžeme otevřít uživatelské rozhraní.
 
 image::Images/12.png[]
+
+Po přechodu na tuto adresu budeme přesměrováni na uživatelské rozhraní pro práci se systémem SAGE2.
 
 image::Images/13.png[]
