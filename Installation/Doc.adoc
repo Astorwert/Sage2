@@ -1,1 +1,4 @@
-# Sage2
+= Příklady aplikací pro Sage2 
+
+== Instalace a konfigurace SAGE2
+
