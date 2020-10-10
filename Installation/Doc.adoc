@@ -44,9 +44,9 @@ image::Images/8.png[]
 
 Budete potřebovat uvest uživatelské jméno a heslo. Výchozí hodnoty:
 
-'login': SAGE2
+`login`: SAGE2
 
-'password': SAGE2
+`password`: SAGE2
 
 image::Images/9.png[]
 
