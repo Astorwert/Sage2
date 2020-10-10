@@ -2,4 +2,6 @@
 
 == Instalace a konfigurace SAGE2
 
-http://sage2.sagecommons.org/downloads/[stáhnout sage2]
+Proces instalace rozdělíme na několik jednoduchých kroků
+
+  * Stáhneme archiv z oficiální stránky SAGE2 http://sage2.sagecommons.org/downloads/[Stáhnout sage2]
