@@ -8,7 +8,7 @@ Proces instalace rozdělíme na několik jednoduchých kroků
   
 image::Images/1.png[]
 
- * Spusťte aplikaci
+  Spusťte aplikaci
 
 image::Images/2.png[]
 
