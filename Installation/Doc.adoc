@@ -12,6 +12,8 @@ image::Images/1.png[]
 
 image::Images/2.png[]
 
+Pokud se zobrazí zpráva o možném riziku pro systém, ignorujte ji a souhlaste s instalací
+
 image::Images/3.png[]
 
 image::Images/4.png[]
