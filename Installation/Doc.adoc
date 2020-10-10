@@ -52,6 +52,8 @@ Potřebujete uvest uživatelské jméno a heslo. Výchozí hodnoty:
 
 image::Images/9.png[]
 
+Po úspěšném přihlášení uvidíte uživatelské rozhraní pro spuštění nebo konfiguraci SAGE2
+
 image::Images/10.png[]
 
 image::Images/11.png[]
