@@ -44,7 +44,7 @@ Po spuštění se automaticky otevře okno Google Chrome
 
 image::Images/8.png[]
 
-Budete potřebovat uvest uživatelské jméno a heslo. Výchozí hodnoty:
+Potřebujete uvest uživatelské jméno a heslo. Výchozí hodnoty:
 
 `login`: sage2
 
