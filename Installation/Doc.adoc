@@ -54,7 +54,13 @@ image::Images/9.png[]
 
 Po úspěšném přihlášení uvidíte uživatelské rozhraní pro spuštění nebo konfiguraci SAGE2
 
+Kliknutím na tlačítko `Admin` v pravém dolním rohu obrazovky přejdeme na stránku konfigurace
+
 image::Images/10.png[]
+
+Zde vidíme 3 různé způsoby konfigurace systému `Assisted`, `Basic`, `Expert`. Proces konfigurace pro všechny tři spočívá ve změně souboru json.
+
+Možnosti `Assisted` a `Basic` tento proces pouze zjednodušují pro nové uživatele.
 
 image::Images/11.png[]
 
