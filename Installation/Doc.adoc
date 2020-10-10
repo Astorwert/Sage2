@@ -8,8 +8,6 @@ Proces instalace rozdělíme na několik jednoduchých kroků
   
   * Spusťte aplikaci a vyberte adresář pro instalaci SAGE
   
-  * 
-  
 image::Images/1.png[]
 
 image::Images/2.png[]
