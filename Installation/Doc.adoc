@@ -58,11 +58,11 @@ Kliknutím na tlačítko `Admin` v pravém dolním rohu obrazovky přejdeme na s
 
 image::Images/10.png[]
 
-Zde vidíme 3 různé způsoby konfigurace systému `Assisted`, `Basic`, `Expert`. Proces konfigurace pro všechny tři spočívá ve změně souboru json.
-
-Možnosti `Assisted` a `Basic` tento proces pouze zjednodušují pro nové uživatele.
+Zde vidíme 3 různé způsoby konfigurace systému `Assisted`, `Basic`, `Expert`. Proces konfigurace pro všechny tři spočívá ve změně souboru json. Možnosti `Assisted` a `Basic` tento proces pouze zjednodušují pro nové uživatele, pomoci jednoduchého uživatelského rozhraní. Zpočátku je systém již nakonfigurován a nevyžaduje zásah uživatele.
 
 image::Images/11.png[]
+
+Pokud se vrátíme na stránku SAGE a stiskneme start, spusti se display klient.
 
 image::Images/12.png[]
 
