@@ -10,28 +10,28 @@ Proces instalace rozdělíme na několik jednoduchých kroků
   
   * 
   
-image::Images1.png[]
+image::Images/1.png[]
 
-image::Images2.png[]
+image::Images/2.png[]
 
-image::Images3.png[]
+image::Images/3.png[]
 
-image::Images4.png[]
+image::Images/4.png[]
 
-image::Images5.png[]
+image::Images/5.png[]
 
-image::Images6.png[]
+image::Images/6.png[]
 
-image::Images7.png[]
+image::Images/7.png[]
 
-image::Images8.png[]
+image::Images/8.png[]
 
-image::Images9.png[]
+image::Images/9.png[]
 
-image::Images10.png[]
+image::Images/10.png[]
 
-image::Images11.png[]
+image::Images/11.png[]
 
-image::Images12.png[]
+image::Images/12.png[]
 
-image::Images13.png[]
+image::Images/13.png[]
