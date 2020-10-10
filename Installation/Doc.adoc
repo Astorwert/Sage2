@@ -32,6 +32,8 @@ Po skončení procesu rozbalení můžeme instalační soubor odstranit
 
 image::Images/6.png[]
 
+=== Spuštění a konfigurace
+
 Otevřete rozbalenou složku a spusťte Launcher.bat
 
 Pokud uvidíte okno brány firewall, povolte přístup pro soukromé a veřejné sítě
