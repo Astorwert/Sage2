@@ -4,4 +4,34 @@
 
 Proces instalace rozdělíme na několik jednoduchých kroků
 
-  * Stáhneme archiv z oficiální stránky SAGE2 http://sage2.sagecommons.org/downloads/[Stáhnout sage2]
+  * Stáhneme si aplikaci z oficiální stránky SAGE2. http://sage2.sagecommons.org/downloads/[Stáhnout sage2]
+  
+  * Spusťte aplikaci a vyberte adresář pro instalaci SAGE
+  
+  * 
+  
+image::Images1.png[]
+
+image::Images2.png[]
+
+image::Images3.png[]
+
+image::Images4.png[]
+
+image::Images5.png[]
+
+image::Images6.png[]
+
+image::Images7.png[]
+
+image::Images8.png[]
+
+image::Images9.png[]
+
+image::Images10.png[]
+
+image::Images11.png[]
+
+image::Images12.png[]
+
+image::Images13.png[]
