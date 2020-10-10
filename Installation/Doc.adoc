@@ -2,6 +2,8 @@
 
 == Instalace a konfigurace SAGE2
 
+Nejprve se ujistěte, že máte nainstalovaný Google Chrome
+
 Celý proces rozdělíme do 2 jednoduchých kroků.
 
 === Instalace
@@ -32,7 +34,11 @@ image::Images/6.png[]
 
 Otevřete rozbalenou složku a spusťte Launcher.bat
 
+Pokud uvidíte okno brány firewall, povolte přístup pro soukromé a veřejné sítě
+
 image::Images/7.png[]
+
+Po spuštění se automaticky otevře okno Google Chrome a budete 
 
 image::Images/8.png[]
 
