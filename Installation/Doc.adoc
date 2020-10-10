@@ -8,13 +8,15 @@ Proces instalace rozdělíme na několik jednoduchých kroků
   
 image::Images/1.png[]
 
- * Spusťte aplikaci a vyberte adresář pro instalaci SAGE
+ * Spusťte aplikaci
 
 image::Images/2.png[]
 
   Pokud se zobrazí zpráva o možném riziku pro systém, ignorujte ji a souhlaste s instalací
 
 image::Images/3.png[]
+
+  Vyberte adresář pro instalaci SAGE
 
 image::Images/4.png[]
 
