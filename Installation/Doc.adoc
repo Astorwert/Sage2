@@ -26,6 +26,8 @@ Počkejte, až se soubory rozbalí
 
 image::Images/5.png[]
 
+Po skončení procesu rozbalení můžeme instalační soubor odstranit
+
 image::Images/6.png[]
 
 image::Images/7.png[]
