@@ -2,23 +2,27 @@
 
 == Instalace a konfigurace SAGE2
 
-Proces instalace rozdělíme na několik jednoduchých kroků
+Celý proces rozdělíme do 2 jednoduchých kroků.
 
- * Stáhneme si aplikaci z oficiální stránky SAGE2. http://sage2.sagecommons.org/downloads/[Stáhnout sage2]
+=== Instalace
+
+Stáhneme si aplikaci z oficiální stránky SAGE2. http://sage2.sagecommons.org/downloads/[Stáhnout sage2]
   
 image::Images/1.png[]
 
-  Spusťte aplikaci
+Spusťte aplikaci
 
 image::Images/2.png[]
 
-  Pokud se zobrazí zpráva o možném riziku pro systém, ignorujte ji a souhlaste s instalací
+Pokud se zobrazí zpráva o možném riziku pro systém, ignorujte ji a souhlaste s instalací
 
 image::Images/3.png[]
 
-  Vyberte adresář pro instalaci SAGE
+Vyberte adresář pro instalaci SAGE
 
 image::Images/4.png[]
+
+Počkejte, až se soubory rozbalí
 
 image::Images/5.png[]
 
