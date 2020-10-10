@@ -2,3 +2,4 @@
 
 == Instalace a konfigurace SAGE2
 
+link: http://sage2.sagecommons.org/downloads/[stáhnout sage2]
