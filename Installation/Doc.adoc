@@ -6,7 +6,7 @@ Nejprve se ujistěte, že máte nainstalovaný Google Chrome
 
 Celý proces rozdělíme do 2 jednoduchých kroků.
 
-=== Instalace
+=== Stažení a instalace
 
 Stáhneme si aplikaci z oficiální stránky SAGE2. http://sage2.sagecommons.org/downloads/[Stáhnout sage2]
   
