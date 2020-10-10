@@ -62,7 +62,9 @@ Zde vidíme 3 různé způsoby konfigurace systému `Assisted`, `Basic`, `Expert
 
 image::Images/11.png[]
 
-Pokud se vrátíme na stránku SAGE a stiskneme start, spusti se display klient.
+Pokud se vrátíme na stránku SAGE a stiskneme start, spusti se Electron a zobrazí nám `SAGE2: Display` klient.
+
+V levém horním rohu vidíme adresu, na které můžeme otevřít uživatelské rozhraní.
 
 image::Images/12.png[]
 
