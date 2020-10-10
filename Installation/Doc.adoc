@@ -30,6 +30,8 @@ Po skončení procesu rozbalení můžeme instalační soubor odstranit
 
 image::Images/6.png[]
 
+Otevřete rozbalenou složku a spusťte Launcher.bat
+
 image::Images/7.png[]
 
 image::Images/8.png[]
